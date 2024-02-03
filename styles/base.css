@@ -1,0 +1,70 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic (CALLED IN NORMALIZE.CSS)
+# Base
+	- Typography
+	- Elements
+	- Links
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+    color: #0035A9;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* Elements */
+ul, 
+li, 
+a {
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+h1,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+/* Links */
+a,
+a:visited {
+    color: #0035A9;
+}
+
+a:hover,
+a:focus {
+    color: #004D57;
+    border-bottom: 0.2rem solid #004D57;
+    top: -3px;
+}
+
+a:focus,
+a:active {
+    outline: 0.1rem solid #004D57;
+}
+
+/*--------------------------------------------------------------
+# Reusable Classes
+--------------------------------------------------------------*/
+
+.rounded-border {
+    border: #0035A9 solid 0.1rem;
+    border-radius: 1rem;
+}
+
+.icons {
+    width: 2rem;
+}

@@ -2,10 +2,7 @@
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 # Generic (CALLED IN NORMALIZE.CSS)
-# Base
-	- Typography
-	- Elements
-	- Links
+# Base (CALLED IN BASE.CSS)
 # Components
     - Reusables Classes
     - Header
@@ -24,59 +21,10 @@
 /*--------------------------------------------------------------
 # Base
 --------------------------------------------------------------*/
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    margin: 0 auto;
-    color: #0035A9;
-    font-weight: 400;
-    line-height: 1.5;
-}
-
-header {
-    display: flex;
-    justify-content: center;
-}
 
 footer {
-    margin-bottom: 5rem;
+    padding: 1rem;
     text-align: center;
-}
-
-/* Elements */
-ul, 
-li, 
-a {
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-}
-
-p {
-    margin: 0;
-}
-
-/* Links */
-a,
-a:visited {
-    color: #0035A9;
-    position: relative;
-    top: 0;
-    transition: top ease 0.3s;
-}
-
-a:hover,
-a:focus {
-    color: #004D57;
-    border-bottom: 0.2rem solid #004D57;
-    top: -3px;
-}
-
-a:focus,
-a:active {
-    outline: 0.1rem solid #004D57;
 }
 
 /*--------------------------------------------------------------
@@ -86,7 +34,7 @@ a:active {
 /* Header */
 
 .logo {
-    width: 100%;
+    width: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,19 +44,40 @@ a:active {
     width: 3rem;
 }
 
-.nav-bar {
-    position: fixed;
-    bottom: 1rem;
-    width: 19rem;
+.site-heading {
+    display: flex;
+    height: 4rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.hamburger-menu {
+    border: none;
     background-color: #FFFFFF;
-    border: 0.1rem solid #0035A9;
-    border-radius: 0.5rem;
-    z-index: 99;
+}
+
+.hamburger-menu img {
+    width: 2.5rem;
+}
+
+.nav-bar {
+    position: absolute;
+    right: 0;
+    top: 4rem;
+    width: 8rem;
+    background-color: #FFFFFF;
+    z-index: 2;
 }
 
 .nav-bar ul {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.nav-bar ul li {
+    padding: 0.5rem;
 }
 
 /* Main */
@@ -142,11 +111,7 @@ video {
 --------------------------------------------------------------*/
 
 @media (min-width: 50em) {
-    
-    body {
-        color: #FDD512;
-    }
-    
+        
     header {
         flex-direction: column;
         height: 100vh;
@@ -168,7 +133,7 @@ video {
         left: 0;
         width: 30%;
         z-index: 99;
-        backdrop-filter: blur(2rem);
+        background-color: #FFFFFF;
     }
 
     .right {
@@ -185,9 +150,21 @@ video {
     }
 
     .nav-bar ul {
-        display: grid;
-        grid-template-columns: 1rem 1rem;
-        
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-bar li {
+        width: 10rem;
+    }
+
+    .nav-bar li a {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        width: fit-content;
     }
 
     .main-quote {
