@@ -1,7 +1,6 @@
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# Generic (CALLED IN NORMALIZE.CSS)
 # Base
 	- Typography
 	- Elements
@@ -17,6 +16,10 @@ html {
 }
 
 body {
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
     margin: 0 auto;
     color: #0035A9;
     font-weight: 400;
@@ -38,32 +41,33 @@ p {
     margin: 0;
 }
 
+button {
+    background-color: transparent;
+    border: none;
+}
+
 /* Links */
 a,
 a:visited {
-    color: #0035A9;
+    color: #FDD512;
 }
 
 a:hover,
 a:focus {
-    color: #004D57;
-    border-bottom: 0.2rem solid #004D57;
+    width: fit-content;
+    color: #0035A9;
+    border-bottom: 0.2rem solid #0035A9;
     top: -3px;
-}
+}   
 
 a:focus,
 a:active {
-    outline: 0.1rem solid #004D57;
+    outline: 0.1rem solid #0035A9;
 }
 
 /*--------------------------------------------------------------
 # Reusable Classes
 --------------------------------------------------------------*/
-
-.rounded-border {
-    border: #0035A9 solid 0.1rem;
-    border-radius: 1rem;
-}
 
 .icons {
     width: 2rem;

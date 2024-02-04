@@ -14,8 +14,8 @@
 --------------------------------------------------------------*/
 
 /* Color Pallete
-    -#0035A9
-    -#FDD512
+    -#0035A9 blue
+    -#FDD512 yellow
 */
 
 /*--------------------------------------------------------------
@@ -52,32 +52,43 @@ footer {
     padding: 0 1rem;
 }
 
-.hamburger-menu {
-    border: none;
-    background-color: #FFFFFF;
+#nav-btn,
+#nav-btn-close img {
+    width: 3rem;
 }
 
-.hamburger-menu img {
-    width: 2.5rem;
+.close-btn {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
 }
 
 .nav-bar {
     position: absolute;
     right: 0;
-    top: 4rem;
-    width: 8rem;
-    background-color: #FFFFFF;
+    top: 0;
+    width: 20rem;
+    height: 100vh;
+    backdrop-filter: blur(1.5rem);
     z-index: 2;
 }
 
 .nav-bar ul {
     display: flex;
     flex-direction: column;
-    gap: 0.2rem;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 1rem;
 }
 
-.nav-bar ul li {
+.nav-links {
+    display: flex;
+    gap: 0.5rem;
     padding: 0.5rem;
+    width: 50%;
+    color: #FDD512;
+    font-size: 2rem;
 }
 
 /* Main */
@@ -88,7 +99,7 @@ footer {
 
 video {
     width: 100%;
-    height: 40rem;
+    height: 42.5rem;
     object-fit: cover;
 }
 
