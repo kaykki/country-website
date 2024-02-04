@@ -1,0 +1,67 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic (CALLED IN NORMALIZE.CSS)
+# Base (CALLED IN BASE.CSS)
+# Components
+    - Reusables Classes (CALLED IN BASE.CSS)
+    - Header (CALLED IN BASE.CSS)
+    - Main
+    - Footer (CALLED IN BASE.CSS)
+# Media Query
+    - Tablet View
+    - Desktop View
+--------------------------------------------------------------*/
+
+/* Color Pallete
+    -#0035A9 blue
+    -#FDD512 yellow
+*/
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+
+/* Main */
+
+.banner {
+    position: relative;
+}
+
+video {
+    width: 100%;
+    height: 42.5rem;
+    object-fit: cover;
+}
+
+.main-quote {
+    margin: 0;
+    position: absolute;
+    bottom: 2rem;
+    right: 0;
+    backdrop-filter: blur(1rem);
+    font-size: 1.2rem;
+    color: #FDD512;
+    padding: 1rem;
+    width: 20rem;
+    border-radius: 1rem;
+    text-align: right;
+}
+
+/*--------------------------------------------------------------
+# Media Query
+--------------------------------------------------------------*/
+
+@media (min-width: 50em) {
+        
+    video {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    .main-quote {
+        font-size: 1.2rem;
+        width: 30rem;
+    }
+}
