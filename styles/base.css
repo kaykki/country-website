@@ -70,7 +70,7 @@ a:active {
 --------------------------------------------------------------*/
 
 .icons {
-    width: 2rem;
+    width: 1.5rem;
 }
 
 /*--------------------------------------------------------------
@@ -119,17 +119,15 @@ a:active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0.5rem;
 }
 
 .nav-links a {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
     align-items: center;
-    width: fit-content;     
+    width: fit-content;
+    gap: 0.5rem;     
 }
-
 
 /* Footer */
 
@@ -140,15 +138,14 @@ a:active {
 }
 
 @media (min-width: 50em) {
+
+    .icons {
+        width: 2.5rem;
+    }
         
-    header {
+    .site-heading {
         flex-direction: column;
         height: 100vh;
-    }
-
-    footer {
-        margin: 0;
-        bottom: 0;
     }
 
     .left {
@@ -187,10 +184,12 @@ a:active {
     .nav-links a {
         flex-direction: row;
         padding: 1rem 0;
+        gap: 1rem;  
     }
 
     .site-footer {
         margin: 0;
+        bottom: 0;
     }
 }
 
