@@ -23,36 +23,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="body-wrapper">
         <header class="site-heading left">
-            <div class="logo">
-                <img src="icons/country-website-logo.svg" alt="country website logo" class="icons">
-                <h1>Food</h1>
-            </div>
+            <img src="icons/country-website-logo.svg" alt="country website logo" class="logo">
             <nav id="navigation" class="nav-bar">
                 <ul>
-                    <li class="nav-links">
-                        <a href="index.html">
+                    <li>
+                        <a class="nav-links" href="index.html">
                             <img src="icons/home-icon.svg" alt="home icon" class="icons">
                             Home
                         </a>
                     </li>
-                    <li  class="nav-links">
-                        <a href="places.html">
+                    <li>
+                        <a class="nav-links" href="places.html">
                             <img src="icons/places-icon.svg" alt="places icon" class="icons">
                             Places
                         </a>
                     </li>
-                    <li  class="nav-links">
-                        <a href="culture.html">
+                    <li>
+                        <a class="nav-links" href="culture.html">
                             <img src="icons/culture-icon.svg" alt="culture icon" class="icons">
                             Culture
                         </a>
                     </li>
-                    <li  class="nav-links">
-                        <a href="credits.html">
+                    <li>
+                        <a class="nav-links" href="credits.html">
                             <img src="icons/credits-icon.svg" alt="credits icon" class="icons">
                             Credits
                         </a>
@@ -61,11 +62,20 @@
             </nav>
         </header>
         <main class="right">
-            <section class="food-banner">
-                <img src="images/food-banner.png" alt="">
+            <section class="banner">
+                <h1>Filipino Cuisine</h1>
+                <video autoplay loop muted>
+                    <source src="media/filipino-food-banner.mp4">
+                </video>
+                <div class="to-main-content">
+                    <a href="#main-content" class="nav-links">
+                        <img src="icons/arrow-down.svg" alt="an arrow down icon" class="icons">
+                        Explore
+                    </a>
+                </div>
             </section>
-            <section class="food-display">
-                <div class="display-item">
+            <section id="main-content" class="food-display">
+                <article class="display-item">
                     <div class="food-image">
                         <img src="images/lechon.jpg" alt="">
                         <h2>Lechón</h2>
@@ -76,8 +86,8 @@
                         cooked in the style of a whole hog—which is to say that it is roasted 
                         on a spit over coals.
                     </p>
-                </div>
-                <div class="display-item">
+                </article>
+                <article class="display-item">
                     <div class="food-image">
                         <img src="images/longganisa.jpg" alt="">
                         <h2>Longganisa</h2>
@@ -88,8 +98,8 @@
                         is made by stuffing hog-casing with ground pork, deliciously flavored with 
                         spices and seasonings.
                     </p>
-                </div>
-                <div class="display-item">
+                </article>
+                <article class="display-item">
                     <div class="food-image">
                         <img src="images/adobo.jpg" alt="">
                         <h2>Adobo</h2>
@@ -99,8 +109,8 @@
                         in its base form, meat, seafood, or vegetables first browned in oil, 
                         and then marinated and simmered in vinegar, salt and/or soy sauce, and garlic.
                     </p>
-                </div>
-                <div class="display-item">
+                </article>
+                <article class="display-item">
                     <div class="food-image">
                         <img src="images/pochero.jpg" alt="">
                         <h2>Pochero</h2>
@@ -110,7 +120,7 @@
                         or fish, along with vegetables, root crops, and cured meats that 
                         are abundant in the area or in season.
                     </p>
-                </div>
+                </article>
             </section>
         </main>
         <footer class="site-footer left">

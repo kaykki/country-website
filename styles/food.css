@@ -18,40 +18,28 @@
 --------------------------------------------------------------*/
 
 /* Main */
-
-.food-banner {
-    width: 100%;
-    height: 10rem;
-    
-}
-
-.food-banner img {
-    width: 100%;
-    height: 10rem;
-    object-fit: cover;
-}
-
 .food-display {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 20rem);
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
     justify-content: center;
     gap: 1rem;
-    color: #0035A9;
     padding: 1rem;
 }
 
 .food-image {
     position: relative;
+    height: 16rem;
 }
 
 .food-image img {
     object-fit: cover;
-    height: 20rem;
+    width: 37rem;
+    height: 100%;
 }
 
 .food-image h2 {
     position: absolute;
-    bottom: 1rem;
+    bottom: 2rem;
     backdrop-filter: blur(10rem);
     padding: 0.5rem;
 }
@@ -61,24 +49,19 @@
 }
 
 .display-description {
-    padding: 1rem;
+    padding: 1.5rem;
     color: #FDD512;
 }
 
 @media (min-width: 50em) {
     
     .food-display {
-        grid-template-columns: 1fr;
-        padding: 5rem;
+        grid-template-columns: repeat(auto-fill, minmax(20rem, 25rem));
     }
 
     .display-item {
         display: grid;
         grid-template-columns: 100%;
-    }
-
-    .food-image img {
-        height: 100%;
     }
 
     .display-description {
@@ -87,12 +70,8 @@
 }
 
 @media (min-width: 70em) {
-    .display-item {
-        display: grid;
-        grid-template-columns: 30% 60%;
-    }
 
     .display-description {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 }
