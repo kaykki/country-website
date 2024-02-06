@@ -16,7 +16,11 @@
 # Base
 --------------------------------------------------------------*/
 
-html {
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
     scroll-behavior: smooth;
 }
 
@@ -25,6 +29,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
+    height: 100vh;
     margin: 0 auto;
     color: #0035A9;
     font-weight: 400;
@@ -41,6 +46,8 @@ a {
 }
 
 h1,
+h2,
+h3,
 p {
     padding: 0;
     margin: 0;
@@ -65,7 +72,7 @@ a:active {
     outline: 0.1rem solid #0035A9;
 }
 
-/*--------------------------------------------------------------
+/*--------------------------    ------------------------------------
 # Reusable Classes
 --------------------------------------------------------------*/
 
@@ -95,6 +102,7 @@ a:active {
     align-items: center;
     justify-content: center;
     padding: 1rem;
+    box-shadow: 0 0.1rem 0.5rem #0035A9;
 }
 
 .nav-bar {
@@ -139,27 +147,29 @@ a:active {
 
 @media (min-width: 50em) {
 
+    .body-wrapper {
+        display: grid;
+        grid-template-columns: 32% 68%;
+        grid-template-rows: 90vh 10vh;
+    }
+
+    .right {
+        grid-column: 2 /-1;
+    }
+
     .icons {
         width: 2.5rem;
     }
         
     .site-heading {
         flex-direction: column;
-        height: 100vh;
     }
 
     .left {
         position: fixed;
-        left: 0;
         width: 32%;
-        z-index: 99;
         background-color: #FFFFFF;
-    }
-
-    .right {
-        position: fixed;
-        right: 0;
-        width: 100%;
+        z-index: 2;
     }
 
     .site-heading {
@@ -168,8 +178,6 @@ a:active {
 
     .nav-bar {
         position: static;
-        display: block;
-        width: 100%;
         border: none;
     }
 
@@ -195,6 +203,10 @@ a:active {
 
 @media (min-width: 70em) {
     
+    .body-wrapper {
+        grid-template-columns: 27% 73%;
+    }
+
     .left {
         width: 27%;
     }

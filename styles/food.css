@@ -1,0 +1,71 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic (CALLED IN NORMALIZE.CSS)
+# Base (CALLED IN BASE.CSS)
+# Components
+    - Reusables Classes (CALLED IN BASE.CSS)
+    - Header (CALLED IN BASE.CSS)
+    - Main
+    - Footer (CALLED IN BASE.CSS)
+# Media Query
+    - Tablet View
+    - Desktop View
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+
+/* Main */
+
+.food-display {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 20rem);
+    justify-content: center;
+    gap: 1rem;
+    color: #0035A9;
+    padding: 1rem;
+}
+
+.food-image {
+    position: relative;
+}
+
+.food-image img {
+    object-fit: cover;
+    height: 20rem;
+}
+
+.food-image h2 {
+    position: absolute;
+    bottom: 1rem;
+    backdrop-filter: blur(3rem);
+    padding: 0.5rem;
+}
+
+.display-item {
+    background-color: #0035A9;
+}
+
+.display-description {
+    padding: 1rem;
+    color: #FDD512;
+}
+
+@media (min-width: 50em) {
+    
+    .food-display {
+        grid-template-columns: 1fr;
+    }
+
+    .display-item {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .food-image img {
+        width: 40rem;
+        height: 100%;
+    }
+}

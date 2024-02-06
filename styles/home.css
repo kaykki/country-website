@@ -48,11 +48,27 @@ video {
 --------------------------------------------------------------*/
 
 @media (min-width: 50em) {
-        
-    video {
+
+    .right {
+        position: fixed;
         width: 100%;
+    }
+        
+    .body-wrapper {
         height: 100vh;
+    }
+
+    video {
+        height: 100%;
         object-fit: cover;
+    }
+
+    .banner {
+        height: 100vh;
+    }
+
+    .right {
+        height: 100vh;
     }
 
     .main-quote {
