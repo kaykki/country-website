@@ -61,7 +61,7 @@
 
     .display-item {
         display: grid;
-        grid-template-columns: 100%;
+        grid-template-rows: 16rem auto;
     }
 
     .display-description {
