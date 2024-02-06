@@ -17,52 +17,73 @@
     <!-- CSS -->
     <link rel="stylesheet" href="styles/fwd-normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/food.css">
+    <link rel="stylesheet" href="styles/culture.css">
 
-    <!-- Font -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="site-heading left">
-        <div class="logo">
-            <img src="icons/country-website-logo.svg" alt="country website logo" class="icons">
-            <h1>Credits</h1>
-        </div>
-        <nav id="navigation" class="nav-bar">
-            <ul>
-                <li class="nav-links">
-                    <a href="index.html">
-                        <img src="icons/home-icon.svg" alt="home icon" class="icons">
-                        Home
+    <div class="body-wrapper">
+        <header class="site-heading left">
+            <img src="icons/country-website-logo.svg" alt="country website logo" class="logo">
+            <nav id="navigation" class="nav-bar">
+                <ul>
+                    <li>
+                        <a class="nav-links" href="index.html">
+                            <img src="icons/home-icon.svg" alt="home navigation icon" class="icons">
+                            Food
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-links" href="food.html">
+                            <img src="icons/food-icon.svg" alt="food navigation icon" class="icons">
+                            Food
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-links" href="places.html">
+                            <img src="icons/places-icon.svg" alt="places navigation icon" class="icons">
+                            Places
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-links" href="culture.html">
+                            <img src="icons/culture-icon.svg" alt="culture navigation icon" class="icons">
+                            Culture
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-links" href="credits.html">
+                            <img src="icons/credits-icon.svg" alt="credits navigation icon" class="icons">
+                            Credits
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="right">
+            <section class="banner">
+                <h1>Credits</h1>
+                <video autoplay loop muted>
+                    <source src="media/credit-banner-video.mp4">
+                </video>
+                <div class="to-main-content">
+                    <a href="#main-content" class="nav-links">
+                        <img src="icons/arrow-down.svg" alt="an arrow down icon" class="icons">
+                        Explore
                     </a>
-                </li>
-                <li  class="nav-links">
-                    <a href="places.html">
-                        <img src="icons/food-icon.svg" alt="food icon" class="icons">
-                        Food
-                    </a>
-                </li>
-                <li  class="nav-links">
-                    <a href="culture.html">
-                        <img src="icons/places-icon.svg" alt="places icon" class="icons">
-                        Places
-                    </a>
-                </li>
-                <li  class="nav-links">
-                    <a href="credits.html">
-                        <img src="icons/culture-icon.svg" alt="culture icon" class="icons">
-                        Culture
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main class="right">
-    </main>
-    <footer class="site-footer left">
-        <p>&#169; 2024 Kaki Kagatan</p>
-    </footer>
+                </div>
+            </section>
+        </main>
+        <footer class="site-footer left">
+            <p>&#169; 2024 Kaki Kagatan</p>
+        </footer>
+    </div>
 </body>
 </html>
