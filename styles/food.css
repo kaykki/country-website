@@ -19,6 +19,18 @@
 
 /* Main */
 
+.food-banner {
+    width: 100%;
+    height: 10rem;
+    
+}
+
+.food-banner img {
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+}
+
 .food-display {
     display: grid;
     grid-template-columns: repeat(auto-fit, 20rem);
@@ -40,7 +52,7 @@
 .food-image h2 {
     position: absolute;
     bottom: 1rem;
-    backdrop-filter: blur(3rem);
+    backdrop-filter: blur(10rem);
     padding: 0.5rem;
 }
 
@@ -57,15 +69,30 @@
     
     .food-display {
         grid-template-columns: 1fr;
+        padding: 5rem;
     }
 
     .display-item {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 100%;
     }
 
     .food-image img {
-        width: 40rem;
         height: 100%;
+    }
+
+    .display-description {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 70em) {
+    .display-item {
+        display: grid;
+        grid-template-columns: 30% 60%;
+    }
+
+    .display-description {
+        font-size: 1.5rem;
     }
 }

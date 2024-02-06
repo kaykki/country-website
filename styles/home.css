@@ -23,6 +23,14 @@
     position: relative;
 }
 
+.banner h1 {
+    width: fit-content;
+    position: absolute;
+    top: 10rem;
+    right: 0;
+    backdrop-filter: blur(1rem);
+}
+
 video {
     width: 100%;
     height: 42.5rem;
