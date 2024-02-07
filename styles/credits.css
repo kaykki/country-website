@@ -9,6 +9,59 @@
     - Footer (CALLED IN BASE.CSS)
 --------------------------------------------------------------*/
 
+/* Color Pallete
+    -#0035A9 blue
+    -#FDD512 yellow
+*/
+
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
+
+.credit-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.credits-table {
+    width: 100%;
+    border-radius: 1rem;
+    font-size: 0.9rem;
+}
+
+.credits-table td a, p {
+    display: inline;
+}
+
+.credits-table caption {
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+.credits-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.credits-table tr:first-of-type {
+    background-color: #0035A9;
+    color: #ffffff;
+}
+
+@media (min-width: 50em) {
+    
+    .credits-table {
+        width: 70%;
+    }
+}
+
+@media (min-width: 70em) {
+    
+    .credits-table {
+        width: 50%;
+    }
+}
