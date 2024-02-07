@@ -1,0 +1,46 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic (CALLED IN NORMALIZE.CSS)
+# Base (CALLED IN BASE.CSS)
+# Components
+    - Header (CALLED IN BASE.CSS)
+    - Main
+    - Footer (CALLED IN BASE.CSS)
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+
+.places-display {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 18.75rem);
+    grid-template-rows: 1fr auto;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 1rem 1rem 1rem;
+    filter: drop-shadow( 0.15rem 0.15rem 0.15rem #0035A9);
+}
+
+.place-container {
+    background-color: #ffffff;
+    height: 100%;
+}
+
+.place-title {
+    position: relative;
+}
+
+.place-title h2 {
+    position: absolute;
+    left: 0;
+    bottom: 2rem;
+    background-color: #ffffff;
+    padding: 0.5rem;
+}
+
+.place-description {
+    padding: 1rem;
+}

@@ -4,13 +4,9 @@
 # Generic (CALLED IN NORMALIZE.CSS)
 # Base (CALLED IN BASE.CSS)
 # Components
-    - Reusables Classes (CALLED IN BASE.CSS)
     - Header (CALLED IN BASE.CSS)
     - Main
     - Footer (CALLED IN BASE.CSS)
-# Media Query
-    - Tablet View
-    - Desktop View
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -24,6 +20,7 @@
     justify-content: center;
     gap: 1rem;
     padding: 3rem 1rem 1rem 1rem;
+    filter: drop-shadow( 0.15rem 0.15rem 0.15rem #0035A9);
 }
 
 .food-image {
@@ -40,17 +37,16 @@
 .food-image h2 {
     position: absolute;
     bottom: 2rem;
-    backdrop-filter: blur(10rem);
+    background-color: #FFFFFF;
     padding: 0.5rem;
 }
 
 .display-item {
-    background-color: #0035A9;
+    background-color: #FFFFFF;
 }
 
 .display-description {
     padding: 1.5rem;
-    color: #FDD512;
 }
 
 @media (min-width: 50em) {
