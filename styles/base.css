@@ -5,6 +5,10 @@
 	- Typography
 	- Elements
 	- Links
+# Components
+    - Header
+    - Main
+    - Footer
 --------------------------------------------------------------*/
 
 /* Color Pallete
@@ -16,14 +20,7 @@
 # Base
 --------------------------------------------------------------*/
 
-html,
-body {
-    height: 100%;
-    width: 100%;
-    overflow: auto;
-    scroll-behavior: smooth;
-}
-
+/* Typography */
 body {
     font-family: "Nunito", Arial, Helvetica, sans-serif;
     font-optical-sizing: auto;
@@ -36,20 +33,27 @@ body {
     line-height: 1.5;
 }
 
-video {
-    width: 100%;
-    height: 91vh;
-    object-fit: cover;
-}
-
-/* Elements */
-
 h1 {
     font-size: 2.5rem;
 }
 
 h2 {
     font-size: 1.5rem;
+}
+
+/* Elements */
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+video {
+    width: 100%;
+    height: 91vh;
+    object-fit: cover;
 }
 
 h1,
@@ -84,17 +88,9 @@ a:focus {
 
 a:focus,
 a:active {
-    outline: 0.1rem ridge #0035A9;
-    outline-offset: 0.3rem;
+    outline: 0.1rem solid    #0035A9;
+    outline-offset: 0.1rem;
     border-radius: 0.1rem;
-}
-
-/*--------------------------    ------------------------------------
-# Reusable Classes
---------------------------------------------------------------*/
-
-.icons {
-    width: 1.5rem;
 }
 
 /*--------------------------------------------------------------
@@ -102,6 +98,16 @@ a:active {
 --------------------------------------------------------------*/
 
 /* Header */
+.site-heading {
+    display: grid;
+    padding: 1rem;
+    box-shadow: 0 0.1rem 0.5rem #0035A9;
+}
+
+
+.icons {
+    width: 1.5rem;
+}
 
 .site-heading {
     display: grid;
@@ -139,6 +145,34 @@ a:active {
     font-size: 1rem;     
 } 
 
+@media (min-width: 50em) {
+    .icons {
+        width: 2.5rem;
+    }
+        
+    .site-heading {
+        align-items: center;
+    }
+
+    .site-heading {
+        height: 100vh;
+    }
+
+    .nav-bar {
+        position: static;
+        border: none;
+        width: 100%;
+    }
+
+    .nav-bar ul {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
 /* Main */
 .banner-video-cover {
     position: absolute;
@@ -171,7 +205,7 @@ a:active {
     z-index: 2;
 }
 
-.main-content-btn {
+.banner-btn {
     margin: 0 auto;
     width: fit-content;
     position: absolute;
@@ -220,32 +254,7 @@ a:active {
         grid-column: 2 /-1;
     }
 
-    .icons {
-        width: 2.5rem;
-    }
-        
-    .site-heading {
-        /* justify-content: center; */
-        align-items: center;
-    }
 
-    .site-heading {
-        height: 100vh;
-    }
-
-    .nav-bar {
-        position: static;
-        border: none;
-        width: 100%;
-    }
-
-    .nav-bar ul {
-        flex-direction: column;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-    }
 
     .nav-links a {
         flex-direction: row;
