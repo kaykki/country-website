@@ -41,6 +41,20 @@ h2 {
     font-size: 1.5rem;
 }
 
+@media (min-width: 50em) {
+
+    h1 {
+        font-size: 5rem;
+    }
+}
+
+@media (min-width: 70em) {
+
+    h1 {
+        font-size: 7rem;
+    }
+}
+
 /* Elements */
 html,
 body {
@@ -70,6 +84,13 @@ a {
     padding: 0;
     text-decoration: none;
     list-style: none;
+}
+
+@media (min-width: 50em) {
+
+    video {
+        height: 100vh;
+    }
 }
 
 /* Links */
@@ -146,6 +167,7 @@ a:active {
 } 
 
 @media (min-width: 50em) {
+
     .icons {
         width: 2.5rem;
     }
@@ -156,6 +178,10 @@ a:active {
 
     .site-heading {
         height: 100vh;
+    }
+
+    .logo {
+        justify-self: center;
     }
 
     .nav-bar {
@@ -170,6 +196,12 @@ a:active {
         justify-content: center;
         align-items: center;
         gap: 1rem;
+    }
+
+    .nav-links a {
+        flex-direction: row;
+        padding: 1rem 0;
+        gap: 1rem;  
     }
 }
 
@@ -213,6 +245,22 @@ a:active {
     left: 0;
     bottom: 10rem;
     z-index: 2;
+    filter: drop-shadow( 0.2rem 0.2rem 0.2rem #000000);
+}
+
+@media (min-width: 50em) {
+    
+    .banner-video-cover {
+        height: 100vh;
+    }
+
+    .banner {
+        margin: 0 auto 0 1.5px;
+    }
+
+    .banner-btn {
+        bottom: 2rem;
+    }
 }
 
 /* Footer */
@@ -222,22 +270,19 @@ a:active {
     text-align: center;
 }
 
-/* Media Query */
-
-/* Tablet */
 @media (min-width: 50em) {
 
-    .logo {
-        justify-self: center;
+    .site-footer {
+        margin: 0;
+        bottom: 0;
     }
+}
 
-    h1 {
-        font-size: 5rem;
-    }
 
-    video {
-        height: 100vh;
-    }
+/*--------------------------------------------------------------
+# Body Layout Media Query
+--------------------------------------------------------------*/
+@media (min-width: 50em) {
 
     .body-wrapper {
         display: grid;
@@ -253,30 +298,8 @@ a:active {
     .right {
         grid-column: 2 /-1;
     }
-
-
-
-    .nav-links a {
-        flex-direction: row;
-        padding: 1rem 0;
-        gap: 1rem;  
-    }
-
-    .banner-video-cover {
-        height: 100vh;
-    }
-
-    .banner {
-        margin: 0 auto 0 1.5px;
-    }
-
-    .site-footer {
-        margin: 0;
-        bottom: 0;
-    }
 }
 
-/* Desktop */
 @media (min-width: 70em) {
     
     .body-wrapper {
@@ -285,9 +308,5 @@ a:active {
 
     .left {
         width: 10%;
-    }
-
-    h1 {
-        font-size: 7rem;
     }
 }
