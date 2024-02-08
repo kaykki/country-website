@@ -8,9 +8,8 @@
     - Header (CALLED IN BASE.CSS)
     - Main
     - Footer (CALLED IN BASE.CSS)
-# Media Query
-    - Tablet View
-    - Desktop View
+    - Media Query
+# Body Layout Media Query
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -28,6 +27,9 @@ video {
 }
 
 .main-quote {
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     margin: 0;
     position: absolute;
     bottom: 6rem;
@@ -40,8 +42,42 @@ video {
     text-align: right;
 }
 
+@media (min-width: 28em) {
+
+    .main-quote {
+        font-size: 1.3rem;
+        width: 25rem;
+    }
+
+    .site-footer {
+        margin-bottom: 7rem;
+    }
+}
+
+@media (min-width: 50em) {
+
+    .main-quote {
+        font-size: 1.2rem;
+        width: 40rem;
+        right: 1rem;
+        bottom: 2rem;
+    }
+
+    .site-footer {
+        margin: 0;
+    }
+}
+
+@media (min-width: 70em) {
+
+    .main-quote {
+        font-size: 1.5rem;
+        width: 45rem;
+    }
+}
+
 /*--------------------------------------------------------------
-# Media Query
+# Body Layout Media Query
 --------------------------------------------------------------*/
 
 @media (min-width: 50em) {
@@ -68,23 +104,11 @@ video {
     .right {
         height: 100vh;
     }
-
-    .main-quote {
-        font-size: 1.2rem;
-        width: 30rem;
-        right: 1rem;
-        bottom: 2rem;
-    }
 }
 
 @media (min-width: 70em) {
 
     .right {
         width: 90%;
-    }
-        
-    .main-quote {
-        font-size: 1.2rem;
-        width: 45rem;
     }
 }
