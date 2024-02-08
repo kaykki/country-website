@@ -85,6 +85,7 @@ video {
     .right {
         position: fixed;
         width: 87%;
+        height: 100vh;
         right: 0;
     }
         
@@ -98,10 +99,6 @@ video {
     }
 
     .banner {
-        height: 100vh;
-    }
-
-    .right {
         height: 100vh;
     }
 }
