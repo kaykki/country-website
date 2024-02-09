@@ -1,6 +1,7 @@
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
+# Colour Pallete
 # Generic (CALLED IN NORMALIZE.CSS)
 # Base (CALLED IN BASE.CSS)
 # Components
@@ -8,9 +9,18 @@
     - Header (CALLED IN BASE.CSS)
     - Main
     - Footer (CALLED IN BASE.CSS)
-    - Media Query
 # Body Layout Media Query
 --------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Color Pallete
+--------------------------------------------------------------*/
+/* 
+    #0035A9 - main-colour
+    #FDD512 - accent-colour
+    #CE1126 - secondary-colour
+    #FFFFFF - background-colour
+*/
 
 /*--------------------------------------------------------------
 # Components
