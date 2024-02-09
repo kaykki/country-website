@@ -1,6 +1,8 @@
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
+# Colour Pallete
+# Generic (CALLED IN NORMALIZE.CSS)
 # Base
 	- Typography
 	- Elements
@@ -12,9 +14,14 @@
 # Body Layout Media Query
 --------------------------------------------------------------*/
 
-/* Color Pallete
-    -#0035A9 blue
-    -#FDD512 yellow
+/*--------------------------------------------------------------
+# Color Pallete
+--------------------------------------------------------------*/
+/* 
+    #0035A9 - main-colour
+    #FDD512 - accent-colour
+    #CE1126 - secondary-colour
+    #FFFFFF - background-colour
 */
 
 /*--------------------------------------------------------------
@@ -264,26 +271,18 @@ a:active {
 }
 
 .banner-btn a {
-    padding: 0.3rem;
+    border: none;
 }
 
 .sub-heading {
     margin: 0 auto;
     width: fit-content;
-    font-size: 3.5rem;
+    font-size: 4rem;
     border-bottom: 0.3rem solid #0035A9;
 }
 
 @media (min-width: 50em) {
     
-    .banner-video-cover {
-        height: 100vh;
-    }
-
-    .banner {
-        margin: 0 auto 0 1.5px;
-    }
-
     .banner-btn {
         bottom: 2rem;
     }
@@ -339,6 +338,7 @@ a:active {
 
     .right {
         grid-column: 2 /-1;
+        border-left: 0.1rem solid #0035A9;
     }
 }
 
