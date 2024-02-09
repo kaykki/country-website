@@ -1,6 +1,7 @@
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
+# Colour Pallete
 # Generic (CALLED IN NORMALIZE.CSS)
 # Base (CALLED IN BASE.CSS)
 # Components
@@ -9,9 +10,14 @@
     - Footer (CALLED IN BASE.CSS)
 --------------------------------------------------------------*/
 
-/* Color Pallete
-    -#0035A9 blue
-    -#FDD512 yellow
+/*--------------------------------------------------------------
+# Colour Pallete
+--------------------------------------------------------------*/
+/* 
+    #0035A9 - main-colour
+    #FDD512 - accent-colour
+    #CE1126 - secondary-colour
+    #FFFFFF - background-colour
 */
 
 /*--------------------------------------------------------------
