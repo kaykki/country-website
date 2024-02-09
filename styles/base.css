@@ -83,7 +83,7 @@ body {
 
 video {
     width: 100%;
-    height: calc(100vh - (4.9988rem + 5.4494rem));
+    height: calc(100vh - (4.835rem + 5.4437rem));
     object-fit: cover;
 }
 
@@ -106,7 +106,7 @@ a {
 @media (min-width: 30em) {
     
     video {
-        height: calc(100vh - (5.4363rem + 6.05rem));;
+        height: calc(100vh - (4.835rem + 6.05rem));;
     }
 }
 
@@ -148,7 +148,7 @@ a:active {
 }
 
 .site-heading {
-    padding: 1rem;
+    padding: 0.7rem;
 }
 
 .logo {
