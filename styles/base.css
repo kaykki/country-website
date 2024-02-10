@@ -31,7 +31,6 @@
 /* Typography */
 body {
     font-family: "Nunito", Arial, Helvetica, sans-serif;
-    font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
     height: 100vh;
