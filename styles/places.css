@@ -24,10 +24,9 @@
 # Components
 --------------------------------------------------------------*/
 
-.places-display {
+.places-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fill, 18.75rem);
-    grid-template-rows: 1fr auto;
     justify-content: center;
     align-items: center;
     gap: 1rem;
