@@ -24,7 +24,7 @@
 # Components
 --------------------------------------------------------------*/
 
-.culture-container {
+.culture-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,7 +32,7 @@
     padding: 1rem;
 }
 
-.culture-container article {
+.culture-wrapper article {
     max-width: 37.5rem;
     display: flex;
     flex-direction: column;
@@ -57,29 +57,29 @@
     bottom: 2rem;
 }
 
-.culture-container p {
+.culture-wrapper p {
     grid-area: description;
 }
 
 @media (min-width: 50em) {
 
-    .culture-container article {
+    .culture-wrapper article {
         max-width: 87.5rem;
     }
     
-    .culture-container article:nth-child(2n + 1) {
+    .culture-wrapper article:nth-child(2n + 1) {
         display: grid;
         grid-template-areas:
         "description banner";
     }
     
-    .culture-container article:nth-child(2n - 2) {
+    .culture-wrapper article:nth-child(2n - 2) {
         display: grid;
         grid-template-areas: 
         "banner description";
     }
 
-    .culture-container p {
+    .culture-wrapper p {
         font-size: 1.2rem;
     }
 }
