@@ -24,6 +24,7 @@
 # Components
 --------------------------------------------------------------*/
 
+/* Credits */
 .credit-wrapper {
     display: flex;
     flex-direction: column;
@@ -62,16 +63,72 @@
     color: #ffffff;
 }
 
+/* Contact */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+}
+
+.contact-container h2 {
+    font-size: 2rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+    background-color: #ffffff;
+    filter: drop-shadow( 0.15rem 0.15rem 0.15rem #0035A9);
+}
+
+::placeholder {
+    color: #0035A9;
+    opacity: 0.5;
+}
+
+.contact-form input {
+    border: 0.1rem solid #0035A9;
+}
+
+.contact-form input[type=text],
+.contact-form input[type=email],
+textarea {
+    color: #0035A9;
+}
+
+.contact-form input[type=text]:focus,
+.contact-form input[type=email]:focus,
+textarea:focus {
+    outline: 0.1rem solid #0035A9;
+}
+
+.contact-form input[type=submit] {
+    background-color: #0035A9;
+    color: #ffffff;
+}
+
+.contact-form textarea {
+    resize: none;
+    border: 0.1rem solid #0035A9;
+}
+
 @media (min-width: 50em) {
     
-    .credits-table {
+    .credits-table,
+    .contact-form {
         width: 70%;
     }
 }
 
 @media (min-width: 70em) {
     
-    .credits-table {
+    .credits-table,
+    .contact-form {
         width: 50%;
     }
 }
