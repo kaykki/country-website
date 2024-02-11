@@ -24,7 +24,7 @@
 # Components
 --------------------------------------------------------------*/
 
-/* Credits */
+/* Main */
 .credit-wrapper {
     display: flex;
     flex-direction: column;
@@ -63,7 +63,6 @@
     color: #ffffff;
 }
 
-/* Contact */
 input,
 label,
 textarea {

@@ -24,6 +24,7 @@
 # Components
 --------------------------------------------------------------*/
 
+/* Main */
 .places-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fill, 18.75rem);
